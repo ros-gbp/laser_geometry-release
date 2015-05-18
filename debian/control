@@ -1,0 +1,12 @@
+Source: ros-indigo-laser-geometry
+Section: misc
+Priority: extra
+Maintainer: Dave Hershberger <dave.hershberger@sri.com>
+Build-Depends: debhelper (>= 9.0.0), libboost-all-dev, libeigen3-dev, ros-indigo-angles, ros-indigo-catkin (>= 0.5.68), ros-indigo-cmake-modules, ros-indigo-roscpp, ros-indigo-rosunit, ros-indigo-sensor-msgs, ros-indigo-tf
+Homepage: http://ros.org/wiki/laser_geometry
+Standards-Version: 3.9.2
+
+Package: ros-indigo-laser-geometry
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libboost-all-dev, libeigen3-dev, python-numpy, ros-indigo-angles, ros-indigo-roscpp, ros-indigo-sensor-msgs, ros-indigo-tf
+Description: This package contains a class for converting from a 2D laser scan as defined by sensor_msgs/LaserScan into a point cloud as defined by sensor_msgs/PointCloud or sensor_msgs/PointCloud2. In particular, it contains functionality to account for the skew resulting from moving robots or tilting laser scanners.
