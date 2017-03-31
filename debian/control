@@ -1,0 +1,13 @@
+Source: ros-lunar-laser-geometry
+Section: misc
+Priority: extra
+Maintainer: Dave Hershberger <dave.hershberger@sri.com>
+Build-Depends: debhelper (>= 9.0.0), libboost-all-dev, libeigen3-dev, ros-lunar-angles, ros-lunar-catkin (>= 0.5.68), ros-lunar-cmake-modules, ros-lunar-roscpp, ros-lunar-rosunit, ros-lunar-sensor-msgs, ros-lunar-tf
+Homepage: http://ros.org/wiki/laser_geometry
+Standards-Version: 3.9.2
+
+Package: ros-lunar-laser-geometry
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libboost-all-dev, libeigen3-dev, python-numpy, ros-lunar-angles, ros-lunar-roscpp, ros-lunar-sensor-msgs, ros-lunar-tf
+Description: This package contains a class for converting from a 2D laser scan as defined by sensor_msgs/LaserScan into a point cloud as defined by sensor_msgs/PointCloud or sensor_msgs/PointCloud2.
+ In particular, it contains functionality to account for the skew resulting from moving robots or tilting laser scanners.
