@@ -1,0 +1,13 @@
+Source: ros-kinetic-laser-geometry
+Section: misc
+Priority: optional
+Maintainer: Dave Hershberger <dave.hershberger@sri.com>
+Build-Depends: debhelper (>= 9.0.0), libboost-all-dev, libeigen3-dev, ros-kinetic-angles, ros-kinetic-catkin (>= 0.5.68), ros-kinetic-roscpp, ros-kinetic-rosunit, ros-kinetic-sensor-msgs, ros-kinetic-tf, ros-kinetic-tf2
+Homepage: http://ros.org/wiki/laser_geometry
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-laser-geometry
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libboost-all-dev, libeigen3-dev, python-numpy, ros-kinetic-angles, ros-kinetic-roscpp, ros-kinetic-sensor-msgs, ros-kinetic-tf, ros-kinetic-tf2
+Description: This package contains a class for converting from a 2D laser scan as defined by sensor_msgs/LaserScan into a point cloud as defined by sensor_msgs/PointCloud or sensor_msgs/PointCloud2.
+ In particular, it contains functionality to account for the skew resulting from moving robots or tilting laser scanners.
