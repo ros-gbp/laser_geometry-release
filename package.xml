@@ -1,6 +1,10 @@
-<package>
+<?xml version="1.0"?>
+<?xml-model
+  href="http://download.ros.org/schema/package_format3.xsd"
+  schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
   <name>laser_geometry</name>
-  <version>1.6.4</version>
+  <version>1.6.5</version>
   <description>
     This package contains a class for converting from a 2D laser scan as defined by
     sensor_msgs/LaserScan into a point cloud as defined by sensor_msgs/PointCloud
@@ -18,21 +22,16 @@
 
   <buildtool_depend version_gte="0.5.68">catkin</buildtool_depend>
 
-  <build_depend>angles</build_depend>
-  <build_depend>boost</build_depend>
-  <build_depend>cmake_modules</build_depend>
-  <build_depend>eigen</build_depend>
-  <build_depend>roscpp</build_depend>
-  <build_depend>sensor_msgs</build_depend>
-  <build_depend>tf</build_depend>
+  <depend>angles</depend>
+  <depend>boost</depend>
+  <depend>eigen</depend>
+  <depend>roscpp</depend>
+  <depend>sensor_msgs</depend>
+  <depend>tf</depend>
+  <depend>tf2</depend>
 
-  <run_depend>angles</run_depend>
-  <run_depend>boost</run_depend>
-  <run_depend>eigen</run_depend>
-  <run_depend>python-numpy</run_depend>
-  <run_depend>roscpp</run_depend>
-  <run_depend>sensor_msgs</run_depend>
-  <run_depend>tf</run_depend>
-  
+  <exec_depend condition="$ROS_PYTHON_VERSION == 2">python-numpy</exec_depend>
+  <exec_depend condition="$ROS_PYTHON_VERSION == 3">python3-numpy</exec_depend>
+
   <test_depend>rosunit</test_depend>
 </package>
