@@ -1,3 +1,26 @@
+## laser_geometry (melodic) - 1.6.6-1
+
+The packages in the `laser_geometry` repository were released into the `melodic` distro by running `/usr/bin/bloom-release --track melodic --rosdistro melodic laser_geometry` on `Fri, 15 Jan 2021 01:10:41 -0000`
+
+The `laser_geometry` package was released.
+
+Version of package(s) in repository `laser_geometry`:
+
+- upstream repository: https://github.com/ros-perception/laser_geometry.git
+- release repository: https://github.com/ros-gbp/laser_geometry-release.git
+- rosdistro version: `1.6.5-1`
+- old version: `1.6.5-1`
+- new version: `1.6.6-1`
+
+Versions of tools used:
+
+- bloom version: `0.10.0`
+- catkin_pkg version: `0.4.22`
+- rosdep version: `0.19.0`
+- rosdistro version: `0.8.2`
+- vcstools version: `0.1.42`
+
+
 ## laser_geometry (kinetic) - 1.6.5-1
 
 The packages in the `laser_geometry` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release laser_geometry --track kinetic --rosdistro kinetic --edit-track` on `Sat, 21 Mar 2020 02:49:56 -0000`
