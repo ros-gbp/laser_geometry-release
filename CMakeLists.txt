@@ -8,11 +8,16 @@ find_package(catkin REQUIRED
         sensor_msgs
         tf
         tf2
+        tf2_geometry_msgs
 )
 
 find_package(Boost REQUIRED COMPONENTS system thread)
 
 find_package(Eigen3 REQUIRED)
+# Handle FindEigen3 module's differing definitions
+if(NOT DEFINED EIGEN3_INCLUDE_DIRS AND DEFINED EIGEN3_INCLUDE_DIR)
+  set(EIGEN3_INCLUDE_DIRS ${EIGEN3_INCLUDE_DIR})
+endif()
 
 catkin_python_setup()
 
@@ -26,7 +31,7 @@ catkin_package(
 include_directories(include
     ${catkin_INCLUDE_DIRS}
     ${Boost_INCLUDE_DIRS}
-    ${EIGEN3_INCLUDE_DIR}
+    ${EIGEN3_INCLUDE_DIRS}
 )
 
 add_library(laser_geometry src/laser_geometry.cpp)
