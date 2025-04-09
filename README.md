@@ -1,3 +1,26 @@
+## laser_geometry (noetic) - 1.6.8-1
+
+The packages in the `laser_geometry` repository were released into the `noetic` distro by running `/usr/bin/bloom-release --rosdistro noetic laser_geometry` on `Wed, 09 Apr 2025 21:01:52 -0000`
+
+The `laser_geometry` package was released.
+
+Version of package(s) in repository `laser_geometry`:
+
+- upstream repository: https://github.com/ros-perception/laser_geometry.git
+- release repository: https://github.com/ros-gbp/laser_geometry-release.git
+- rosdistro version: `1.6.7-1`
+- old version: `1.6.7-1`
+- new version: `1.6.8-1`
+
+Versions of tools used:
+
+- bloom version: `0.12.0`
+- catkin_pkg version: `1.0.0`
+- rosdep version: `0.25.1`
+- rosdistro version: `1.0.1`
+- vcstools version: `0.1.42`
+
+
 ## laser_geometry (noetic) - 1.6.7-1
 
 The packages in the `laser_geometry` repository were released into the `noetic` distro by running `/usr/bin/bloom-release --track noetic --rosdistro noetic laser_geometry` on `Fri, 05 Feb 2021 05:43:47 -0000`
